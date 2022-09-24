@@ -10,31 +10,31 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 2,
       nombre: "Ravioles",
       precio: 1500,
-      imagen: "cebolla.jpg",
+      imagen: "",
     },
     {
       id: 3,
       nombre: "Ñoquis",
       precio: 1500,
-      imagen: "calabacin.jpg",
+      imagen: "",
     },
     {
       id: 4,
       nombre: "Lasagna",
       precio: 1600,
-      imagen: "fresas.jpg",
+      imagen: "",
     },
     {
       id: 5,
       nombre: "Fusilli",
       precio: 1500,
-      imagen: "calabacin.jpg",
+      imagen: "",
     },
     {
       id: 6,
       nombre: "Tortelloni",
       precio: 1500,
-      imagen: "calabacin.jpg",
+      imagen: "",
     },
   ];
 
