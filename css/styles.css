@@ -51,9 +51,11 @@ body {
     font-weight: 700;
 }
 #nosotros {
-    height: 90vh;
-    align-items: center;
+    height: auto;
+    justify-content: center !important;
     display: flex;
+    margin: 5rem 0 5rem 0;
+    
 }
 .nosotrosImg img {
     height: 500px;
@@ -78,4 +80,8 @@ body {
     margin-top: 1rem;
 }
 
+
+body{
+    background-color: #ffd274;
+}
 
