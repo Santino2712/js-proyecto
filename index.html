@@ -19,7 +19,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Ponderosaa</title>
+  <title>La Ponderosa</title>
  
 </head>
 <body>
@@ -109,6 +109,22 @@
             crossorigin="anonymous"
             
         ></script>
+
+        <script>
+            let url = 'https://jsonplaceholder.typicode.com/posts'
+            fetch(url)
+            .then(response => response.json())
+            .then(data => mostrarData(data))
+            .catch(error => console.log(error))
+
+            const mostrarData = (data) => {
+                console.log(data)
+
+
+
+            }
+
+        </script>
 </body>
 
 </html>

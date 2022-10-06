@@ -81,7 +81,17 @@ body {
 }
 
 
-body{
-    background-color: #ffd274;
+.productostienda {
+    height: 100vh;
+    display: flex;
+    margin-top: 2rem;
 }
 
+.formulariocontacto{
+    margin: 3rem 0 0 3rem;
+
+}
+
+.botonenviar{
+    margin: 3rem 0 0 3rem;
+}
