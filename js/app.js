@@ -4,37 +4,37 @@ document.addEventListener("DOMContentLoaded", () => {
       id: 1,
       nombre: "Sorrentinos",
       precio: 1500,
-      imagen: "",
+      imagen: "../assets/sorrentidejyq.jpg",
     },
     {
       id: 2,
       nombre: "Ravioles",
       precio: 1500,
-      imagen: "",
+      imagen: "../assets/ravioles.jpg",
     },
     {
       id: 3,
       nombre: "Ñoquis",
       precio: 1500,
-      imagen: "",
+      imagen: "../assets/noquis.jpg",
     },
     {
       id: 4,
       nombre: "Lasagna",
       precio: 1600,
-      imagen: "",
+      imagen: "../assets/lasagna.jpg",
     },
     {
       id: 5,
       nombre: "Fusilli",
       precio: 1500,
-      imagen: "",
+      imagen: "../assets/fusili.jpg",
     },
     {
       id: 6,
       nombre: "Tortelloni",
-      precio: 1500,
-      imagen: "",
+      precio: 1600,
+      imagen: "../assets/tortelloni.jpg",
     },
   ];
 
@@ -205,3 +205,12 @@ document.addEventListener("DOMContentLoaded", () => {
   renderizarProductos();
   renderizarCarrito();
 });
+
+const productos = "../json/productos.json";
+
+function cargadeproductos() {
+  fetch(productos)
+    .then((res) => res.json())
+    .then((res) => console.log(res));
+}
+cargadeproductos();
