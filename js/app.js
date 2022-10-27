@@ -47,6 +47,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const miLocalStorage = window.localStorage;
   const DOMbotonComprar = document.querySelector("#boton-comprar");
 
+  const productos = "../json/productos.json";
+
+  function cargadeproductos() {
+    fetch(productos)
+      .then((res) => res.json())
+      .then((res) => console.log(res));
+  }
+  cargadeproductos();
+
   function renderizarProductos() {
     baseDeDatos.forEach((info) => {
       const miNodo = document.createElement("div");
@@ -205,12 +214,3 @@ document.addEventListener("DOMContentLoaded", () => {
   renderizarProductos();
   renderizarCarrito();
 });
-
-const productos = "../json/productos.json";
-
-function cargadeproductos() {
-  fetch(productos)
-    .then((res) => res.json())
-    .then((res) => console.log(res));
-}
-cargadeproductos();
